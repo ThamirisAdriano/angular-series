@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
   {
     path:'login-page',
-    loadChildren: () => import('./pages/login-page/login-page.module').then((module) =>module.LoginPageModule) //**?? */
+    loadChildren: () => import('./pages/auth/login-page/login-page.module').then((module) =>module.LoginPageModule) //**?? */
   },
   {
     path:'admin',

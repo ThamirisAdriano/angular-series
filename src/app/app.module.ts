@@ -5,10 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from "./app.component";
+import { CadastroComponent } from './pages/auth/cadastro/cadastro.component';
+import { ForgotComponent } from './pages/auth/forgot/forgot.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CadastroComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,
